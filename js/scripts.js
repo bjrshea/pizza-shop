@@ -1,9 +1,8 @@
 // Backend Logic:
-var toppingsArray = [];
-
-function Order(size, toppings) {
-  this.pizzaSize = size
-  this.pizzaToppings = toppings
+function Order(name, size, toppings) {
+  this.pizzaName = name;
+  this.pizzaSize = size;
+  // this.pizzaToppings = [];
 }
 
 // Frontend Logic:
@@ -11,14 +10,16 @@ $(document).ready(function(){
   $("#order-form").submit(function(event){
     event.preventDefault();
 
+    var toppingsArray = [];
+    var inputtedName = $("#user-name").val();
+    console.log(inputtedName);
+    var inputtedSize = $("#user-size").val();
     $("input:checkbox[name=toppings]:checked").each(function(){
       var inputtedToppings = $(this).val();
       toppingsArray.push(inputtedToppings);
     });
 
-    var inputtedSize = $("#user-size").val();
-
-    var pizzaOrder = new Order(inputtedSize, toppingsArray);
+    var pizzaOrder = new Order(inputtedName, inputtedSize, toppingsArray);
     console.log(pizzaOrder);
 
   });
