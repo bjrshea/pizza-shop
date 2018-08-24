@@ -1,5 +1,5 @@
 // Backend Logic:
-var inputtedToppings = [];
+var toppingsArray = [];
 
 function Order(size, toppings) {
   this.pizzaSize = size
@@ -11,10 +11,15 @@ $(document).ready(function(){
   $("#order-form").submit(function(event){
     event.preventDefault();
 
-    var inputOne = $("#user-size").val();
-    var inputTwo = $("#user-toppings").val();
+    $("input:checkbox[name=toppings]:checked").each(function(){
+      var inputtedToppings = $(this).val();
+      toppingsArray.push(inputtedToppings);
+    });
 
-    var pizzaOrder = new Order(inputOne, inputTwo);
+    var inputtedSize = $("#user-size").val();
+
+    var pizzaOrder = new Order(inputtedSize, toppingsArray);
+    console.log(pizzaOrder);
 
   });
 });
