@@ -4,5 +4,11 @@
 }
 #user-size {
   margin-bottom: 20px;
-
+}
+#order-button {
+  margin-bottom: 20px;
+}
+#enter-name {
+  display: block;
+  text-align: center;
 }
