@@ -1,14 +1,24 @@
 // Backend Logic:
 function Order(size, toppings) {
-  this.size = size
-  this.toppings = toppings
+  this.pizzaSize = size
+  this.pizzaToppings = toppings
 }
 
 // Frontend Logic:
 $(document).ready(function(){
-  $("#pizza-order").submit(function(event){
+  $("#order-form").submit(function(event){
     event.preventDefault();
-    var userInput = new Order("#user-size", "user-toppings")
-    console.log(userInput)
+
+    var inputOne = $("#user-size").val();
+    var inputTwo = $("#user-toppings").val();
+
+    var pizzaOrder = new Order(inputOne, inputTwo);
+
+    $("#order-priice").append(pizzaOrder);
+
+    $("input#user-size").val("");
+    $("input#user-toppings").val("");
+
+
   });
 });
