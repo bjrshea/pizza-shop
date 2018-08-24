@@ -1,6 +1,10 @@
 .jumbotron {
   text-align: center;
-  background-color: yellow;
+    font-family: 'Luckiest Guy', cursive;
+  background-color: yellow;  
+}
+option {
+  padding-right: 50px;
 }
 #user-size {
   margin-bottom: 20px;
