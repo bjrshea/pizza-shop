@@ -2,7 +2,6 @@
 function Order(name, price) {
   this.pizzaName = name;
   this.pizzaPrice = price;
-  // this.pizzaToppings = toppings;
 }
 
 Order.prototype.orderDetails = function() {
