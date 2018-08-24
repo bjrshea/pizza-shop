@@ -9,25 +9,31 @@
   </head>
   <body>
     <div class="container">
-      <h1>Pizza Shop</h1>
+      <div class="">
+        <h1>Brendan's Pizza Shop</h1>
+      </div>
       <form id="order-form">
         <div class="form-group">
           <input type="text" name="customer-name" id="user-name">
         </div>
         <select class="form-control" id="user-size">
-          <option>Small</option>
-          <option>Medium</option>
-          <option>Large</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
         </select>
         <div class="form-group">
           <input type="checkbox" name="toppings" value="cheese">Extra cheese<br>
           <input type="checkbox" name="toppings" value="olives">Olives<br>
           <input type="checkbox" name="toppings" value="artichokes">Artichoke hearts<br>
+          <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
+          <input type="checkbox" name="toppings" value="peppers">Mixed peppers<br>
+          <input type="checkbox" name="toppings" value="garlic">Garlic<br>
+          <input type="checkbox" name="toppings" value="truffle">Truffle oil<br>
         </div>
         <button type="submit" name="button"></button>
       </form>
       <div id="order-price">
-        <h3>The price of your order is:</h3>
+
       </div>
     </div>
   </body>
