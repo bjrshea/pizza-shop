@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href="css/bootstrap.css"rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/styles.css"rel="stylesheet" href="/css/master.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -9,10 +10,10 @@
     <title>Pizza Shop</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <h1>Brendan's Pizza Joint</h1>
+    </div>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Brendan's Pizza Joint</h1>
-      </div>
       <form id="order-form">
         <div id="enter-name" class="form-group">
           <h4>Enter a name for the order:</h4>
@@ -21,13 +22,13 @@
         <div id="pick-a-size">
           <h4>Select a size:</h4>
           <select id="user-size">
-            <option value="small"><span class="selector">Small</span></option>
-            <option value="medium"><span class="selector">Medium</span></option>
-            <option value="large"><span class="selector">Large</span></option>
+            <option value="small"><span class="selector">Small: $8</span></option>
+            <option value="medium"><span class="selector">Medium: $10</span></option>
+            <option value="large"><span class="selector">Large: $12</span></option>
           </select>
         </div>
         <div id="add-toppings" class="form-group">
-          <h4>Add additional toppings for $1 a piece:</h4>
+          <h4>Add additional toppings for <strong>$1</strong> a piece:</h4>
           <input type="checkbox" name="toppings" value="cheese">Extra cheese<br>
           <input type="checkbox" name="toppings" value="olives">Olives<br>
           <input type="checkbox" name="toppings" value="artichokes">Artichoke hearts<br>
@@ -41,6 +42,11 @@
       <div id="order-price">
 
       </div>
+    </div>
+    <div id="footer">
+      <i style="font-size:36px" class="fa">&#xf082;</i>
+      <i style="font-size:36px" class="fa">&#xf081;</i>
+      <i style="font-size:36px" class="fa">&#xf16d;</i>
     </div>
   </body>
 </html>

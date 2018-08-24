@@ -1,18 +1,24 @@
 .jumbotron {
   text-align: center;
-    font-family: 'Luckiest Guy', cursive;
-  background-color: yellow;  
+  font-family: 'Luckiest Guy', cursive;
+  background-color: yellow;
+}
+button {
+  background-color: yellow;
 }
 option {
   padding-right: 50px;
+}
+#footer i {
+  padding: 75px 40px 30px 20px;
+  float: right;
+}
+#enter-name {
+  margin-bottom: 30px;
 }
 #user-size {
   margin-bottom: 20px;
 }
 #order-button {
   margin-bottom: 20px;
-}
-#enter-name {
-  display: block;
-  text-align: center;
 }
