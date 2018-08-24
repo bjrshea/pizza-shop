@@ -3,16 +3,6 @@
   font-family: 'Luckiest Guy', cursive;
   background-color: yellow;
 }
-button {
-  background-color: yellow;
-}
-option {
-  padding-right: 50px;
-}
-#footer i {
-  padding: 75px 40px 30px 20px;
-  float: right;
-}
 #enter-name {
   margin-bottom: 30px;
 }
@@ -21,4 +11,7 @@ option {
 }
 #order-button {
   margin-bottom: 20px;
+}
+#order-price {
+  padding-bottom: 50px;
 }
