@@ -1,4 +1,6 @@
 // Backend Logic:
+var inputtedToppings = [];
+
 function Order(size, toppings) {
   this.pizzaSize = size
   this.pizzaToppings = toppings
@@ -13,12 +15,6 @@ $(document).ready(function(){
     var inputTwo = $("#user-toppings").val();
 
     var pizzaOrder = new Order(inputOne, inputTwo);
-
-    $("#order-priice").append(pizzaOrder);
-
-    $("input#user-size").val("");
-    $("input#user-toppings").val("");
-
 
   });
 });
